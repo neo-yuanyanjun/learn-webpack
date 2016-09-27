@@ -8,3 +8,11 @@ webpack非全局安装的情况下，需要运行下面的命令
 ```shell
 node_modules/.bin/webpack app/main.js public/bundle.js
 ```
+
+```shell
+# npm start 是个特殊脚本命令，可以在终端直接执行
+npm start
+# 如果要用npm执行其他脚本，必须用npm run
+npm run {script name}
+npm run build
+```
