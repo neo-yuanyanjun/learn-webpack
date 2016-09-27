@@ -16,3 +16,17 @@ npm start
 npm run {script name}
 npm run build
 ```
+
+### webpack-dev-server的用法
+[官网](http://webpack.github.io/docs/webpack-dev-server.html "webpack-dev-server")
+####### 用法
+```shell
+# 方式1
+node_modules/.bin/webpack-dev-server
+# 方式2
+# 在package.json中配置脚本
+npm run server
+```
+
+### webpack loader加载器
+一篇相关文章[使用webpack loader加载器](http://www.cnblogs.com/leinov/p/5330944.html "使用webpack loader加载器")
