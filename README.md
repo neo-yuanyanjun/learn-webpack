@@ -5,4 +5,6 @@
 这是一篇关于Markdown语法说明[Markdown 语法说明 (简体中文版) ](http://www.appinn.com/markdown/#link "Markdown 语法说明 (简体中文版) ")
 
 webpack非全局安装的情况下，需要运行下面的命令
-    node_modules/.bin/webpack app/main.js public/bundle.js
+```shell
+node_modules/.bin/webpack app/main.js public/bundle.js
+```
