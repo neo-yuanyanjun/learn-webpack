@@ -3,3 +3,6 @@
 另外一篇关于.gitignore配置文件语法说明[Git 的 .gitignore 配置](http://www.cnblogs.com/haiq/archive/2012/12/26/2833746.html "Git 的 .gitignore 配置")
 
 这是一篇关于Markdown语法说明[Markdown 语法说明 (简体中文版) ](http://www.appinn.com/markdown/#link "Markdown 语法说明 (简体中文版) ")
+
+webpack非全局安装的情况下，需要运行下面的命令
+    node_modules/.bin/webpack app/main.js public/bundle.js
