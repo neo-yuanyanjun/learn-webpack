@@ -38,3 +38,6 @@ npm run server
     loader: 'style!css'
 }
 ```
+#### style-loader、css-loader用法
+[官网](https://www.npmjs.com/package/css-loader, "css-loader")
+

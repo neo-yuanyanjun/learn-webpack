@@ -41,7 +41,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel',
+                loader: 'babel'
                 // 为babel-loader设置额外的配置选项
                 // 把babel的配置单独写在.babelrc配置文件里
                 // query: {
@@ -51,6 +51,8 @@ module.exports = {
             {
                 test: /\.css$/,
                 // 感叹号的作用在于使同一文件能够使用不同类型的loader
+                // loader: 'style'
+                // loader: 'css-loader'
                 loader: 'style!css'
             }
         ]
