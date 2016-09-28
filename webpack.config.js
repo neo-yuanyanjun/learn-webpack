@@ -5,6 +5,7 @@
 
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     // 配置生成Source Maps，有以下四个选项
@@ -58,7 +59,8 @@ module.exports = {
                 // loader: 'style'
                 // loader: 'css-loader'
                 // loader: 'style-loader!css-loader?modules!postcss'
-                loader: 'style!css?modules!postcss'
+                // loader: 'style!css?modules!postcss'
+                loader: ExtractTextPlugin.extract('style', 'css?modules!postcss')
             }
         ]
     },
@@ -73,6 +75,10 @@ module.exports = {
             template: __dirname + '/app/index.tmpl.html'
         }),
         // 热加载插件
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.optimize.OccurenceOrderPlugin(),
+        new webpack.optimize.UglifyJsPlugin(),
+        // new ExtractTextPlugin('style.css')
+        new ExtractTextPlugin('[name]-[hash].css')
     ]
 };
