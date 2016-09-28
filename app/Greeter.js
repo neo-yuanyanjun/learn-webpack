@@ -12,7 +12,7 @@ class Greeter extends Component {
     render() {
         var t = styles;
         return (
-            <div className={ styles.root }>
+            <div className='root'>
                 { config.greetText }
             </div>
         );

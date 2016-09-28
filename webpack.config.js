@@ -53,8 +53,13 @@ module.exports = {
                 // 感叹号的作用在于使同一文件能够使用不同类型的loader
                 // loader: 'style'
                 // loader: 'css-loader'
-                loader: 'style-loader!css-loader?modules'
+                // loader: 'style-loader!css-loader?modules!postcss'
+                loader: 'style!css?modules!postcss'
             }
         ]
-    }
+    },
+
+    postcss: [
+        require('autoprefixer')
+    ]
 };
