@@ -37,6 +37,15 @@ module.exports = {
             {
                 test: /\.json$/,
                 loader: 'json'
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel',
+                // 为babel-loader设置额外的配置选项
+                query: {
+                    presets: ['es2015', 'react']
+                }
             }
         ]
     }
