@@ -3,6 +3,9 @@
  * @author Yuan Yanjun
  */
 
+var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     // 配置生成Source Maps，有以下四个选项
     // source-map
@@ -13,13 +16,13 @@ module.exports = {
 
     entry: __dirname + '/app/main.js',
     output: {
-        path: __dirname + '/public/',
+        path: __dirname + '/build/',
         filename: 'bundle.js'
     },
 
     devServer: {
         // 本地服务器所加载的资源文件所在目录
-        contentBase: './public',
+        // contentBase: './public',
         // 设置终端输出为彩色
         colors: true,
         // 不跳转，单页面应用非常有用
@@ -27,7 +30,8 @@ module.exports = {
         // 源文件改变时，自动刷新页面
         inline: true,
         // 本地服务监听端口
-        port: 8081
+        port: 8081,
+        hot: true
     },
 
     module: {
@@ -61,5 +65,14 @@ module.exports = {
 
     postcss: [
         require('autoprefixer')
+    ],
+
+    plugins: [
+        new webpack.BannerPlugin('Copyright Flying Unicorns inc. Yuan Yanjun.'),
+        new HtmlWebpackPlugin({
+            template: __dirname + '/app/index.tmpl.html'
+        }),
+        // 热加载插件
+        new webpack.HotModuleReplacementPlugin()
     ]
 };
