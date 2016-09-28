@@ -1,5 +1,7 @@
 这是[原文地址 - 入门Webpack，看这篇就够了](http://www.jianshu.com/p/42e11515c10f# "入门Webpack，看这篇就够了")
 
+[英文原版地址](http://www.pro-react.com/materials/appendixA/, "webpack for react")
+
 另外一篇关于.gitignore配置文件语法说明[Git 的 .gitignore 配置](http://www.cnblogs.com/haiq/archive/2012/12/26/2833746.html "Git 的 .gitignore 配置")
 
 这是一篇关于Markdown语法说明[Markdown 语法说明 (简体中文版) ](http://www.appinn.com/markdown/#link "Markdown 语法说明 (简体中文版) ")
