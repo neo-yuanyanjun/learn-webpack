@@ -47,6 +47,11 @@ module.exports = {
                 // query: {
                 //     presets: ['es2015', 'react']
                 // }
+            },
+            {
+                test: /\.css$/,
+                // 感叹号的作用在于使同一文件能够使用不同类型的loader
+                loader: 'style!css'
             }
         ]
     }

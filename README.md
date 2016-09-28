@@ -30,3 +30,11 @@ npm run server
 
 ### webpack loader加载器
 一篇相关文章[使用webpack loader加载器](http://www.cnblogs.com/leinov/p/5330944.html "使用webpack loader加载器")
+##### loader中『！』符号的作用
+```javascript
+# 感叹号的作用在于使同一个文件可以使用不同的loader，如下
+{
+    test: /\.css$/,
+    loader: 'style!css'
+}
+```
