@@ -43,9 +43,10 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel',
                 // 为babel-loader设置额外的配置选项
-                query: {
-                    presets: ['es2015', 'react']
-                }
+                // 把babel的配置单独写在.babelrc配置文件里
+                // query: {
+                //     presets: ['es2015', 'react']
+                // }
             }
         ]
     }
