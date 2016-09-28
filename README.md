@@ -3,10 +3,10 @@
 [英文原版地址](http://www.pro-react.com/materials/appendixA/, "webpack for react")
 
 ## 其他webpack入门介绍文章
-> [webpack学习之路](https://github.com/wangning0/Autumn_Ning_Blog/blob/master/blogs/3-12/webpack.md, "webpack学习之路")
-> [webpack 入门指南](http://www.w2bc.com/Article/50764, "webpack 入门指南")
-> [webpack编译流程漫谈](https://github.com/slashhuang/blog/issues/1, "webpack编译流程漫谈")
-> [Webpack学习总结](https://diamont1001.github.io/webpack-summary/, "Webpack学习总结")
+> [webpack学习之路](https://github.com/wangning0/Autumn_Ning_Blog/blob/master/blogs/3-12/webpack.md, "webpack学习之路")  
+> [webpack 入门指南](http://www.w2bc.com/Article/50764, "webpack 入门指南")  
+> [webpack编译流程漫谈](https://github.com/slashhuang/blog/issues/1, "webpack编译流程漫谈")  
+> [Webpack学习总结](https://diamont1001.github.io/webpack-summary/, "Webpack学习总结")  
 
 另外一篇关于.gitignore配置文件语法说明[Git 的 .gitignore 配置](http://www.cnblogs.com/haiq/archive/2012/12/26/2833746.html "Git 的 .gitignore 配置")
 
