@@ -37,5 +37,19 @@ module.exports = {
                 ]
             }
         ]
+    },
+
+    devServer: {
+        // 本地服务器所加载的资源文件所在目录
+        contentBase: './dist',
+        // 设置终端输出为彩色
+        colors: true,
+        // 不跳转，单页面应用非常有用
+        historyApiFallback: true,
+        // 源文件改变时，自动刷新页面
+        inline: true,
+        // 本地服务监听端口
+        port: 8082,
+        hot: true
     }
 };
