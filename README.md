@@ -51,7 +51,10 @@ npm run server
 [css-modules官网](https://github.com/css-modules/css-modules, "css-modules")
 [postcss官网](https://github.com/postcss/postcss, "postcss")
 
-
+#### 当运行shell脚本提示没有权限的时候
+```shell
+chmod u+x *.sh
+```
 
 
 
