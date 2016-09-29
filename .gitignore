@@ -3,3 +3,5 @@
 nohup.out
 
 *bundle.js
+
+demo-1/dist/*
